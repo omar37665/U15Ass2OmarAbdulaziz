@@ -18,7 +18,7 @@ header {
 }
 
 nav {
-  background-color: #333;
+  background-color: #000000;
   padding: 10px;
 }
 
@@ -41,12 +41,12 @@ margin: 0 10px;
 }
 
 .content h2 {
-  color: #333;
+  color: #000000;
   font-size: 24px;
 }
 
 .content p {
-  color: #666;
+  color: #000000;
   font-size: 16px;
   line-height: 1.5;
   max-width: 80%;
@@ -67,7 +67,7 @@ margin: 0 10px;
 }
 
 footer {
-  background-color: #333;
+  background-color: #000000;
   color: white;
   padding: 10px;
   position: relative;
