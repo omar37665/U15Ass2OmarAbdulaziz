@@ -21,3 +21,54 @@ nav {
   background-color: #333;
   padding: 10px;
 }
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 10px;
+}
+
+.content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  border: 2px solid #2c3e50
+}
+
+.content h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.content p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.section {
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: relative;
+}
