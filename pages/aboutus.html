@@ -147,6 +147,19 @@ body {
 .navbar2 .buttons a:not(:last-child) {
   margin-right: 30px;
 }
+.navbar .buttons .search-input {
+    width: 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #F0F8FF;
+    border-radius: 0.375rem;
+    outline: none;
+    transition: width 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    background-color: #010304;
+    color: #fff;
+    visibility: hidden;
+}
 .navbar .buttons .search {
   border: 1px solid #F0F8FF;
   padding: 10px 20px;
@@ -157,6 +170,12 @@ body {
 .navbar .buttons .search:hover {
   background-color: #010304;
   color: #fff;
+}
+/* Show search bar when active */
+.navbar .buttons .search-input.active {
+    width: 200px;
+    opacity: 1;
+    visibility: visible;
 }
 .hero-section {
   display: flex;
