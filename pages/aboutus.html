@@ -1,1 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLOVAK CHARITY</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        
+        <h2 class="logo"><a href="index.html">Slovak Aid Foundation</a></h2> 
+     
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </label>
+        <ul class="links">
+          <li><a href="aboutus.html" class="aboutus">About Us</a></li>
+          <li><a href="signup.html" class="membership">Membership</a></li>
+          <li><a href="dates&fees.html" class="datesfees">Dates & Fees</a></li>
+          <li><a href="edugames.html" class="games">Games</a></li>
+          <li><a href="info.html" class="info">Information</a></li>
+        </ul>
+           <div class="buttons">
+          <a href="#" class="search">Search</a>
+        </div>
+      </nav>
+      
+      <div class="header-logo">
+     <img src="https://raw.githubusercontent.com/omar37665/U15Ass2OmarAbdulaziz/refs/heads/main/images/logo_new-removebg-preview.png" alt="hero image" />
+      </div>
+      
+    </header>
+    <div class="container">
+        <div class="box light">
+            <h2><a href="#">What we do</a></h2>
+            <p>Learn how we're fighting for the mental health of people in England and Wales. Read about the things we campaign for and the services we offer.</p>
+        </div>
+        <div class="box light">
+            <h2><a href="#">Our impact</a></h2>
+            <p>Take a look at our annual report to find out what impact our work has in England and Wales. And learn what we got up to in the past year.</p>
+        </div>
+        <div class="box light">
+            <h2><a href="#">Our achievements</a></h2>
+            <p>For over 60 years, Mind has worked to improve the lives of people with mental health problems. See what we've achieved.</p>
+        </div>
+        <div class="box dark">
+            <h2><a href="#">Mind Cymru</a></h2>
+            <p>Mind Cymru is Mind in Wales. We're working to make sure everyone in Wales has access to the mental health information, support, and services they need. See what we're up to in Wales.</p>
+        </div>
+        <div class="box dark">
+            <h2><a href="#">Local Minds</a></h2>
+            <p>Local Minds support communities across England and Wales. Services include supported housing, crisis helplines, drop-in centres, employment schemes, counselling, and befriending.</p>
+        </div>
+        <div class="box dark">
+            <h2><a href="#">How we raise and spend our money</a></h2>
+            <p>Mind relies on donations. We're so grateful to everyone who supports us financially. That's why we're committed to being open about how we're funded and managed.</p>
+        </div>
+    </div>
+      <div class="footer">
+  <p>Contact us for additional support at slovakaidfoundation@gmail.com</p>
+</div>
+      <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white
+     ;
+   text-align: center;
+}
+        .header-logo {
+          margin-top: -80px;
+        }  
+ .logo {
+     margin-bottom: -20px;
+margin-left: 180px;
+        }
+</style>
+    </section>
+  </body>
+</html>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baskerville Old Face";
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #F0F8FF 23%, #96d9ff 95%);
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+.navbar .logo a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #010304;
+  margin-left: -230px;
+}
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+.navbar .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #010304;
+  padding: 10px 0;
+  transition: 0.2s ease;
+}
+.navbar .links a:hover {
+  color: #808080;
+}
+.navbar .buttons a {
+  text-decoration: none;
+  color: #010304;
+  font-size: 1rem;
+  padding: 15px 0;
+  transition: 0.2s ease;
+}
+.navbar .buttons a:not(:last-child) {
+  margin-right: 30px;
+}
+.navbar .buttons .search {
+  border: 1px solid #F0F8FF;
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: 0.2s ease;
+}
+.navbar .buttons .search:hover {
+  background-color: #010304;
+  color: #fff;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95vh;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero-section .hero {
+  max-width: 50%;
+  color: #010304;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #010304;
+}
+.hero-section .img img {
+  width: 300px;
+}
+.hero-section .buttons {
+  margin-top: 40px;
+}
+.hero-section .buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+.hero-section .buttons a:not(:last-child) {
+  margin-right: 15px;
+}
+.buttons .join {
+  background-color: #010304;
+}
+.hero-section .buttons .learn {
+  border: 1px solid #fff;
+  border-radius: 0.375rem;
+}
+.hero-section .buttons a:hover {
+  background-color: #010304;
+}
+/* Hamburger menu styles */
+#menu-toggle {
+  display: none;
+}
+#hamburger-btn {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  order: 1;
+}
+@media screen and (max-width: 1023px) {
+  .navbar .logo a {
+    font-size: 1.5rem;
+  }
+  .links {
+    position: fixed;
+    left: -100%;
+    top: 75px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    background: #Ffffff;
+    flex-direction: column;
+    transition: 0.3s ease;
+  }
+  .navbar #menu-toggle:checked ~ .links {
+    left: 0;
+  }
+  .navbar #hamburger-btn {
+    display: block;
+  }
+  .header .buttons {
+    display: none;
+  }
+  .hero-section .hero {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-section img {
+    display: none;
+  }
 
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.light {
+     background: linear-gradient(to bottom, #F0F8FF 23%, #96d9ff 95%);
+}
+
+.dark {
+     background: linear-gradient(to bottom, #F0F8FF 23%, #96d9ff 95%);
+}
+
+h2 a {
+    color: #0000ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #333;
+}
+ 
+</style>
