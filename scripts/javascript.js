@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   searchInput.addEventListener("blur", function () {
-      if (searchInput.value === "") {
+      if (searchInput.value.trim() === "") {
           searchInput.classList.remove("active");
           searchBtn.style.display = "inline-block"; // Show button again if search bar is empty
       }
