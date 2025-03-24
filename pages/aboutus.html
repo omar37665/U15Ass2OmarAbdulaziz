@@ -308,24 +308,21 @@ p {
 </style>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-    const searchBtn = document.getElementById("search-btn");
-    const searchInput = document.getElementById("search-input");
+  const searchBtn = document.getElementById("search-btn");
+  const searchInput = document.getElementById("search-input");
 
-    if (searchBtn && searchInput) {
-        searchBtn.addEventListener("click", function (e) {
-            e.preventDefault();
-            searchInput.classList.toggle("active");
-            if (searchInput.classList.contains("active")) {
-                searchInput.focus();
-            }
-        });
+  searchBtn.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevents jumping to the top
+      searchInput.classList.add("active");
+      searchInput.focus();
+      searchBtn.style.display = "none"; // Hide button when search bar appears
+  });
 
-        // Hide search input when clicking outside
-        document.addEventListener("click", function (e) {
-            if (!searchBtn.contains(e.target) && !searchInput.contains(e.target)) {
-                searchInput.classList.remove("active");
-            }
-        });
-    }
+  searchInput.addEventListener("blur", function () {
+      if (searchInput.value.trim() === "") {
+          searchInput.classList.remove("active");
+          searchBtn.style.display = "inline-block"; // Show button again if search bar is empty
+      }
+  });
 });
     </script>
