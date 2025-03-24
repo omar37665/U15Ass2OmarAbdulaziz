@@ -298,9 +298,18 @@ body {
   </style>
 
 <style>
-  .form{
-	background:#f1f1f1; width:470px; margin:0 auto; padding-left:50px; padding-top:20px;
+  .form {
+    background: #f1f1f1;
+    width: 470px;
+    padding: 20px 50px;
+    position: absolute; /* Allows precise positioning */
+    top: 50%; /* Moves the form down to the middle */
+    left: 50%; /* Moves the form to the center horizontally */
+    transform: translate(-50%, -50%); /* Adjusts position precisely to the center */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    border-radius: 5px; /* Optional: Rounds the edges */
 }
+
 .form fieldset{border:0px; padding:0px; margin:0px;}
 .form p.contact { font-size: 12px; margin:0px 0px 10px 0;line-height: 14px; font-family:Arial, Helvetica;}
 
