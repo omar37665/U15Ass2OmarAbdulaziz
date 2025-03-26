@@ -1,1 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLOVAK CHARITY</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar2">
+        
+        <h2 class="logo"><a href="../index.html">Slovak Aid Foundation</a></h2> 
+     
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </label>
+        <ul class="links">
+          <li><a href="aboutus.html" class="aboutus">About Us</a></li>
+          <li><a href="signup.html" class="membership">Membership</a></li>
+          <li><a href="dates&fees.html" class="datesfees">Dates & Fees</a></li>
+          <li><a href="edugames.html" class="games">Games</a></li>
+          <li><a href="info.html" class="info">Information</a></li>
+        </ul>
+        <div class="navbar">
+            <div class="buttons">
+                <a href="#" class="search" id="search-btn">Search</a>
+                <input type="text" id="search-input" class="search-input" placeholder="Search..." />
+            </div>
+        </div>
+        <script src="scripts/javascript.js"></script> <!-- Ensure correct path -->
+      </nav>
+      <div class="header-logo">
+     <img src="https://raw.githubusercontent.com/omar37665/U15Ass2OmarAbdulaziz/refs/heads/main/images/logo_new-removebg-preview.png" alt="hero image" />
+      </div>
+      
+    </header>
+
+    <table>
+        <thead>
+          <tr>
+            <th>Course Type</th>
+            <th>Dates</th>
+            <th>Fees/Cost</th>
+            <th>Period of time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mathematics</td>
+            <td>June 7th</td>
+            <td>£600</td>
+            <td>2 years</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>June 8th</td>
+            <td>£550</td>
+            <td>2 years</td>
+          </tr>
+          <tr>
+            <td>Japanese</td>
+            <td>June 9th</td>
+            <td>£700</td>
+            <td>1 year</td>
+          </tr>
+          <tr>
+            <td>Science</td>
+            <td>June 10th</td>
+            <td>£650</td>
+            <td>1 year</td>
+          </tr>
+          <tr>
+            <td>Geography</td>
+            <td>June 11th</td>
+            <td>£600</td>
+            <td>2 years</td>
+          </tr>
+          <tr>
+            <td>History</td>
+            <td>June 12th</td>
+            <td>£600</td>
+            <td>2 years</td>
+          </tr>
+        </tbody>
+      </table>
+   
+      <div class="footer">
+  <p>Contact us for additional support at slovakaidfoundation@gmail.com</p>
+</div>
+      <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white
+     ;
+   text-align: center;
+}
+        .header-logo {
+          margin-top: -80px;
+        }  
+ .logo {
+     margin-bottom: -20px;
+margin-left: 180px;
+        }
+</style>
+    </section>
+  </body>
+</html>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baskerville Old Face";
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #F0F8FF 23%, #96d9ff 95%);
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+.navbar2 .logo a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #010304;
+  margin-left: -230px;
+}
+.navbar2 .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+.navbar2 .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #010304;
+  padding: 10px 0;
+  transition: 0.2s ease;
+}
+.navbar2 .links a:hover {
+  color: #808080;
+}
+.navbar2 .buttons a {
+  text-decoration: none;
+  color: #010304;
+  font-size: 1rem;
+  padding: 15px 0;
+  transition: 0.2s ease;
+}
+.navbar2 .buttons a:not(:last-child) {
+  margin-right: 30px;
+}
+.navbar .buttons .search-input {
+    width: 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #F0F8FF;
+    border-radius: 0.375rem;
+    outline: none;
+    transition: width 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    background-color: #010304;
+    color: #fff;
+    visibility: hidden;
+}
+.navbar .buttons .search {
+  border: 1px solid #F0F8FF;
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: 0.2s ease;
+}
+.navbar .buttons .search:hover {
+  background-color: #010304;
+  color: #fff;
+}
+/* Show search bar when active */
+.navbar .buttons .search-input.active {
+    width: 200px;
+    opacity: 1;
+    visibility: visible;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95vh;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero-section .hero {
+  max-width: 50%;
+  color: #010304;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #010304;
+}
+.hero-section .img img {
+  width: 300px;
+}
+.hero-section .buttons {
+  margin-top: 40px;
+}
+.hero-section .buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+.hero-section .buttons a:not(:last-child) {
+  margin-right: 15px;
+}
+.buttons .join {
+  background-color: #010304;
+}
+.hero-section .buttons .learn {
+  border: 1px solid #fff;
+  border-radius: 0.375rem;
+}
+.hero-section .buttons a:hover {
+  background-color: #010304;
+}
+/* Hamburger menu styles */
+#menu-toggle {
+  display: none;
+}
+#hamburger-btn {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  order: 1;
+}
+@media screen and (max-width: 1023px) {
+  .navbar .logo a {
+    font-size: 1.5rem;
+  }
+  .links {
+    position: fixed;
+    left: -100%;
+    top: 75px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    background: #Ffffff;
+    flex-direction: column;
+    transition: 0.3s ease;
+  }
+  .navbar #menu-toggle:checked ~ .links {
+    left: 0;
+  }
+  .navbar #hamburger-btn {
+    display: block;
+  }
+  .header .buttons {
+    display: none;
+  }
+  .hero-section .hero {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-section img {
+    display: none;
+  }
+  .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .th, .td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .thead {
+      background-color: #f4f4f4;
+    }
+
+    .tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .tbody tr:hover {
+      background-color: #e9e9e9;
+    }
+  </style>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const searchBtn = document.getElementById("search-btn");
+  const searchInput = document.getElementById("search-input");
+
+  searchBtn.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevents jumping to the top
+      searchInput.classList.add("active");
+      searchInput.focus();
+      searchBtn.style.display = "none"; // Hide button when search bar appears
+  });
+
+  searchInput.addEventListener("blur", function () {
+      if (searchInput.value.trim() === "") {
+          searchInput.classList.remove("active");
+          searchBtn.style.display = "inline-block"; // Show button again if search bar is empty
+      }
+  });
+});
+    </script>
 
