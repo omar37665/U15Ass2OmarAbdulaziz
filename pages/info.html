@@ -169,13 +169,20 @@ body {
 
 .hero-section {
   display: flex;
-  flex-direction: row; /* Stack elements vertically */
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between the two sections */
   align-items: center;
-  height: auto; /* Adjust height for content */
+  gap: 50px; /* Adds space between the two hero sections */
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.hero-container, .boyhero-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between text and image */
+  flex: 1; /* Allows even distribution of space */
 }
 
 .hero-section .hero, 
@@ -183,19 +190,11 @@ body {
   max-width: 50%;
   text-align: center;
   color: #010304;
-  margin-bottom: 20px;
 }
 
 .hero p, .boyhero p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
   color: #010304;
-}
-
-.hero-section .img, 
-.hero-section .img2 {
-  display: flex;
-  justify-content: center;
 }
 
 .hero-section .img img, 
@@ -203,6 +202,7 @@ body {
   width: 300px;
   height: auto;
 }
+
 .hero-section .buttons {
   margin-top: 40px;
 }
