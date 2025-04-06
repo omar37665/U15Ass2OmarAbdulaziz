@@ -170,9 +170,9 @@ body {
 .hero-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Space between the two sections */
+  justify-content: space-between;
   align-items: center;
-  gap: 50px; /* Adds space between the two hero sections */
+  gap: 50px;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -181,8 +181,8 @@ body {
 .hero-container, .boyhero-container {
   display: flex;
   align-items: center;
-  gap: 20px; /* Space between text and image */
-  flex: 1; /* Allows even distribution of space */
+  gap: 20px;
+  flex: 1;
 }
 
 .hero-section .hero, 
@@ -199,9 +199,11 @@ body {
 
 .hero-section .img img, 
 .hero-section .img2 img {
-  width: 300px;
+  width: 220px; /* Reduced from 300px */
   height: auto;
+  border-radius: 8px; /* Optional: adds a soft corner style */
 }
+
 
 .hero-section .buttons {
   margin-top: 40px;
